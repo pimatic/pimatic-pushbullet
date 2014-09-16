@@ -9,7 +9,7 @@ module.exports = (env) ->
   util = env.require 'util'
   M = env.matcher
 
-  PushBullet = require('pushbullet');
+  PushBullet = require('pushbullet')
   Promise.promisifyAll(PushBullet.prototype)
   
   pusherService = null
